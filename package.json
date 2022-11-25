@@ -1,0 +1,44 @@
+{
+  "name": "shaanxi-hesuan",
+  "version": "0.0.0",
+  "description": "Automatically Collect Shaanxi Nuclein Acid Codes.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node-esm index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShirasawaSama/ShannxiNucleinCollection.git"
+  },
+  "author": "Shirasawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShirasawaSama/ShannxiNucleinCollection/issues"
+  },
+  "homepage": "https://github.com/ShirasawaSama/ShannxiNucleinCollection#readme",
+  "dependencies": {
+    "@koa/router": "^12.0.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "node-fetch": "^3.3.0",
+    "tesseract.js": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3",
+    "wechat-yoo": "^0.1.2",
+    "yazl": "^2.5.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.5",
+    "@types/koa__router": "^12.0.0",
+    "@types/koa-bodyparser": "^4.3.10",
+    "@types/yazl": "^2.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
