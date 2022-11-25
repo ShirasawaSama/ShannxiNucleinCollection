@@ -115,9 +115,8 @@ route.get('/users', ctx => {
 app.use(route.routes())
 
 setInterval(async () => {
-  if (new Date().getHours() === 0) {
+  if (new Date().getHours() <= 1) {
     await promises.writeFile('data.json', '{}')
-    await promises.writeFile('users.json', '[]')
 
     users.length = 0
     for (const key in userData) delete userData[key]
@@ -135,7 +134,7 @@ setInterval(async () => {
       await promises.unlink(`temp/${key}`)
     }
   }
-}, 1000 * 60 * 60)
+}, 1000 * 30 * 60)
 
 app.listen(8123)
 console.log('Started!')
