@@ -80,7 +80,7 @@ yoo.image(async (sender, { FromUserName, PicUrl }) => {
       delete cache.file
       delete cache.data
       sender.text(`姓名: ${Content}\n采样时间: ${data.time}`)
-      userData[FromUserName] = data
+      userData[Content] = data
       promises.writeFile('data.json', JSON.stringify(userData, null, 2)).catch(console.error)
       promises.rename(file, `data/${Content}.jpg`).catch(console.error)
     }
