@@ -118,7 +118,6 @@ setInterval(async () => {
   if (new Date().getHours() <= 1) {
     await promises.writeFile('data.json', '{}')
 
-    users.length = 0
     for (const key in userData) delete userData[key]
     for (const key in tempMap) {
       if (tempMap[key].data) {
